@@ -34,10 +34,9 @@ csv.field_size_limit(sys.maxsize)
 
 FIELDNAMES = ['image_id', 'image_w','image_h','num_boxes', 'boxes', 'classes', 'attrs', 'features']
 
-# Settings for the number of features per image. To re-create pretrained features with 36 features
-# per image, set both values to 36. 
+# Settings for the number of features per image. 
 MIN_BOXES = 10
-MAX_BOXES = 36
+MAX_BOXES = 100
 
 def load_image_ids(split_name, data_root):
     ''' Load a list of (path,image_id tuples). Modify this to suit your data locations. '''
